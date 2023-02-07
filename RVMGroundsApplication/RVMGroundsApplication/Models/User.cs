@@ -11,6 +11,8 @@ namespace RVMGroundsApplication.Models
         long phoneNum { get; set; }
         string row { get; set; }
         string jobTitle { get; set; }
-        bool isAdmin { get; set; }
+
+        bool admin;
+        bool isAdmin { get { return admin; } set { admin = false; } }
     }
 }
